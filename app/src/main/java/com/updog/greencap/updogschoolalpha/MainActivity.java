@@ -1,8 +1,13 @@
 package com.updog.greencap.updogschoolalpha;
 
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class MainActivity {
-    int x = 5;
-    int y = 9;
+public class MainActivity extends AppCompatActivity {
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+  }
 }
