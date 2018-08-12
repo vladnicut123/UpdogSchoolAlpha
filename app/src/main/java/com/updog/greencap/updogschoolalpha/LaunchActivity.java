@@ -17,7 +17,7 @@ public class LaunchActivity extends Activity {
     new Handler().postDelayed(new Runnable() {
       @Override
       public void run() {
-        Intent homeIntent = new Intent(LaunchActivity.this, MainActivity.class);
+        Intent homeIntent = new Intent(LaunchActivity.this, MiniGameStart.class);
         startActivity(homeIntent);
         finish();
       }
