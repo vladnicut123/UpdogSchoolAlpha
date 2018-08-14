@@ -31,5 +31,13 @@ public class MiniGameStart extends AppCompatActivity {
             R.anim.translate);
 
     textView.startAnimation(animTranslate);
+
+
+    if(textView.getY() == 1700) {
+
+      Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(),
+              R.anim.fade_out);
+      textView.startAnimation(animFadeOut);
+    }
   }
 }
